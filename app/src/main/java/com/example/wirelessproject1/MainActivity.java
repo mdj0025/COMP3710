@@ -16,10 +16,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void convert(View view){
 
-        int tempF = Integer.parseInt(((EditText)findViewById(R.id.degreesF)).getText().toString());
-        int tempC = (tempF - 32) * 5/9;
+        double tempF = Double.parseDouble(((EditText)findViewById(R.id.degreesF)).getText().toString());
+        double tempC = (tempF - 32) * 5/9;
 
-        ((EditText)findViewById(R.id.degreesC)).setText(Integer.toString(tempC));
+        ((EditText)findViewById(R.id.degreesC)).setText(Double.toString(tempC));
 
         return;
     }
